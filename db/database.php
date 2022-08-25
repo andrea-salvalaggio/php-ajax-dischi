@@ -57,7 +57,7 @@
             "year" => "1988",
         ],
         [
-            "poster" => "https://img.discogs.com/KOBsqQwKiNKH-q927oHMyVdDzSo=/fit-in/596x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6406665-1418464475-6120.jpeg.jpg",
+            "poster" => "https://img.discogs.com/KOBsqQwKiNKH-q927oHMyVdDzSo=/fit-in/596x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/       discogs-images/R-6406665-1418464475-6120.jpeg.jpg",
             "title" => "Hard Wired",
             "author" => "Dave Weckl",
             "genre" => "Jazz",
@@ -70,5 +70,8 @@
             "genre" => "Pop",
             "year" => "1987",
         ],
-    ]
+    ];
+
+    header('Content-Type: application/json');
+    echo json_encode($discList);
 ?>
