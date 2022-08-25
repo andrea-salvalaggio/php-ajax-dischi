@@ -46,6 +46,13 @@
                 "year" => "2018",
             ],
             [
+                "poster" => "https://images-na.ssl-images-amazon.com/images/I/810nSIQOLiL._SY355_.jpg",
+                "title" => "Brave new World",
+                "author" => "Iron Maiden",
+                "genre" => "Metal",
+                "year" => "2000",
+            ],
+            [
                 "poster" => "https://upload.wikimedia.org/wikipedia/en/9/97/Eric_Clapton_OMCOMR.jpg",
                 "title" => "One more car, one more raider",
                 "author" => "Eric Clapton",
@@ -97,18 +104,24 @@
 
     <main class="container my-5">
         <div class="row">
-            <div class="col-12">
+            <?php foreach ($discList as $disc) { ?>
                 <div class="card-container py-3">
                     <div class="card text-white">
-                        <img src="" class="card-img-top" alt="">
+                        <img src="" alt="">
                         <div class="card-body text-center px-0">
-                            <h5 class="text-uppercase fw-bold mb-3"> </h5>
-                            <p class="card-text m-0"> </p>
-                            <p class="m-0"> </p>
+                            <h5 class="text-uppercase fw-bold mb-3">
+                                <?php echo $disc['title']?>
+                            </h5>
+                            <p class="card-text m-0">
+                                <?php echo $disc['author']?>
+                            </p>
+                            <p class="m-0">
+                                <?php echo $disc['year']?>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            <?php } ?>
         </div>
     </main>
     
