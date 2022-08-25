@@ -22,6 +22,7 @@
 <body>
 
     <div id="app">
+
         <!-- Header -->
         <header class="d-flex align-items-center">
             <div class="container-fluid">
@@ -35,11 +36,34 @@
             </div>
         </header>
 
-        <main>
+        <!-- <main>
             <ul v-for="disc in discs">
                 <li> {{ disc.title }} </li>
             </ul>
+        </main> -->
+
+        <!-- Main -->
+        <main class="container my-5">
+            <div class="row">
+                <div class="card-container p-3" v-for="disc in discs">
+                    <div class="card text-white">
+                        <img :src="disc.poster" :alt="disc.author">
+                        <div class="text-center">
+                            <h5 class="text-uppercase mb-3 mt-3">
+                                {{ disc.title }}
+                            </h5>
+                            <p class="m-0">
+                                {{ disc.author }}
+                            </p>
+                            <p class="m-0">
+                                {{ disc.year }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+
     </div>
 
     <script src="js/script.js"></script>

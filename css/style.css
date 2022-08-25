@@ -15,10 +15,6 @@ h5{
     font-weight: 600;
 }
 
-ul li{
-    color: white;
-}
-
 .logo-container{
     width: 50px;
     height: 50px;
@@ -39,4 +35,9 @@ ul li{
     background-color: #2e3a46;
     padding: 20px;
     border-radius: 0%;
+}
+
+/* Solo per Versione 2 // Milestone 1 */
+ul li{
+    color: white;
 }
