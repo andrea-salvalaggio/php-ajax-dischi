@@ -105,10 +105,10 @@
     <main class="container my-5">
         <div class="row">
             <?php foreach ($discList as $disc) { ?>
-                <div class="card-container py-3">
+                <div class="card-container p-3">
                     <div class="card text-white">
-                        <img src="" alt="">
-                        <div class="card-body text-center px-0">
+                        <img src="<?php echo $disc['poster']?>" alt="<?php echo $disc['author']?>">
+                        <div class="card-body text-center">
                             <h5 class="text-uppercase fw-bold mb-3">
                                 <?php echo $disc['title']?>
                             </h5>
